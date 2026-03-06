@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Shop</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<link href="css/layout.css" rel="stylesheet">
+<link href="css/shop.css" rel="stylesheet">
+<link href="css/contactseller.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+<div id="appHeader"></div>
+
+<div id="shopBanner"></div>
+
+<!-- CONTACT SELLER -->
+<div class="shop-contact-bar">
+<button id="contactSellerBtn" class="contact-seller-btn">
+Contact Seller
+</button>
+</div>
+
+<div class="container py-4">
+
+  <!-- hidden category source for shop.js -->
+  <div id="categoryBar"></div>
+
+  <!-- CATEGORY + SORT BAR -->
+  <div class="d-flex justify-content-between align-items-center mb-3">
+
+    <!-- CATEGORY DROPDOWN -->
+    <div class="sort-wrapper">
+
+      <button class="sort-pill" type="button" onclick="toggleCategoryMenu()">
+        Category: <span id="currentCategoryLabel">All</span> ▼
+      </button>
+
+      <div class="sort-menu" id="categoryMenu"></div>
+
+    </div>
+
+    <!-- SORT DROPDOWN -->
+    <div class="sort-wrapper">
+
+      <button class="sort-pill" type="button" onclick="toggleSortMenu()">
+        Sort: <span id="currentSortLabel">Newest</span> ▼
+      </button>
+
+      <div class="sort-menu" id="sortMenu">
+        <div onclick="selectSort('newest')">Newest</div>
+        <div onclick="selectSort('priceLow')">Price: Low to High</div>
+        <div onclick="selectSort('priceHigh')">Price: High to Low</div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- PRODUCTS -->
+  <div class="row g-4" id="productList"></div>
+
+  <!-- PAGINATION -->
+  <div id="pagination" class="text-center mt-4"></div>
+
+</div>
+
+<div id="appFooter"></div>
+
+<script src="js/layout.js"></script>
+<script src="js/shop.js"></script>
+
+<script src="js/contactseller.js"></script>
+
+<script>
+
+initContactSeller({
+
+facebook:[
+{label:"MSP Fashion Page",url:"#"}
+],
+
+tiktok:[
+{label:"@mspfashion",url:"#"}
+],
+
+telegram:[
+{label:"MSP Official Channel",url:"#"}
+],
+
+phone:[
+{label:"+959111111111",url:"tel:+959111111111"},
+{label:"+959222222222",url:"tel:+959222222222"},
+{label:"+959333333333",url:"tel:+959333333333"}
+],
+
+viber:[
+{label:"+959123456789",url:"viber://chat?number=959123456789"},
+{label:"+959987654321",url:"viber://chat?number=959987654321"}
+]
+
+});
+
+</script>
+
+</body>
+
+</html>
