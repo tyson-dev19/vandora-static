@@ -1,5 +1,6 @@
-renderLayout({platformMode:true});
+document.addEventListener("DOMContentLoaded", function(){
 
+renderLayout({platformMode:true});
 
 /* SHOP DATA */
 
@@ -223,3 +224,5 @@ renderShops();
 }
 
 renderShops();
+
+});
