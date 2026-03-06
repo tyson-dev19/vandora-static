@@ -53,7 +53,7 @@ John Doe
 
 <div class="side-menu__link"><i class="fa-solid fa-gear"></i> Settings</div>
 <div class="side-menu__link"><i class="fa-solid fa-headset"></i> Support</div>
-<div class="side-menu__link"><i class="fa-solid fa-circle-info"></i> About Vandora</div>
+<div class="side-menu__link"><i class="fa-solid fa-circle-info"></i> About Vendora</div>
 <div class="side-menu__link"><i class="fa-solid fa-right-from-bracket"></i> Logout</div>
 
 </div>
@@ -122,7 +122,7 @@ headerEl.innerHTML=`
 </div>
 
 <div class="header-title">
-Vandora
+Vendora
 </div>
 
 <div class="header-actions">
@@ -220,7 +220,7 @@ footerEl.innerHTML=`
 </div>
 
 <div class="footer-bottom">
-© 2026 Vandora. All rights reserved.
+© 2026 Vendora. All rights reserved.
 </div>
 
 </footer>
